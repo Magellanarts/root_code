@@ -1,0 +1,18 @@
+h1 {
+  font: 900 40px/1.2 $siteFont;
+  text-transform: uppercase;
+  
+  @media #{$medium} {
+    font-size: 80px;
+    line-height: 1.1;
+  }
+}
+
+h2 {
+  font: 900 24px/1.33 $siteFont;
+  @media #{$medium} {
+    font-size: 56px;
+    line-height: 1.14;
+  }
+
+}

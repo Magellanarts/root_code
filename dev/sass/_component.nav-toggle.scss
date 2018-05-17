@@ -1,0 +1,60 @@
+.c-nav-toggle {
+  width: 24px;
+  height: 19px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 9001;
+  right: 7.5%;
+  top: 47px;
+
+  @media #{$medium} {
+    top: 72px;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background: #fff;
+    transition: .2s linear;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
+  }
+
+  &.collapse {
+
+    &:before {
+      transform: rotate(45deg);
+      top: 8px;
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+      bottom: 8px;
+    }
+
+    .c-nav-toggle__line {
+      opacity: 0;
+    }
+  }
+}
+
+.c-nav-toggle__line {
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background: #fff;
+  opacity: 1;
+  transition: .2s linear;
+}
