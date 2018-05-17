@@ -2,3 +2,13 @@
   padding-left: 7.5%;
   padding-right: 7.5%;
 }
+
+.l-slim-container {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.l-page-section {
+  @extend .u-std-pb;
+  @extend .u-std-pt;
+}

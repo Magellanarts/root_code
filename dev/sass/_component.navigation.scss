@@ -1,0 +1,37 @@
+.c-nav {
+  li {
+    &:not(:last-child) {
+      padding-bottom: 4px;
+    }
+  }
+  a {
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
+.c-site-nav {
+  position: relative;
+  padding-bottom: 36px;
+  margin-bottom: 20px;
+
+  a {
+    font: 900 56px/1 $siteFont;
+  }
+
+  &:after {
+    content: '';
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+
+.c-secondary-nav {
+  font: 900 24px/1 $siteFont;
+  margin-bottom: 36px;
+}

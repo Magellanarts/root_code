@@ -1,3 +1,11 @@
 .c-tag {
+  font: 900 12px/1 $siteFont;
+  color: #fff;
+  background: #000;
+  padding: 8px;
+  display: inline-block;
 
+  @media #{$medium} {
+    font-size: 16px;
+  }
 }

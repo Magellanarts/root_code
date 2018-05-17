@@ -1,9 +1,47 @@
+/*------------------------
+  Spacing
+------------------------*/
+.u-std-pt {
+  padding-top: 80px;
 
+  @media #{$medium} {
+    padding-top: 160px;
+  }
+}
+.u-std-pb {
+  padding-bottom: 80px;
 
+  @media #{$medium} {
+    padding-bottom: 160px;
+  }
+}
+
+.u-sm-pt {
+  padding-top: 40px;
+
+  @media #{$medium} {
+    padding-top: 120px;
+  }
+}
+
+.u-sm-pb {
+  padding-bottom: 40px;
+
+  @media #{$medium} {
+    padding-bottom: 120px;
+  }
+}
 /*------------------------
   Text
 ------------------------*/
-
+.u-lrg-text {
+  font: 16px/1.5 $siteFont;
+  
+  @media #{$medium} {
+    font-size: 28px;
+    line-height: 1.57;
+  }
+}
 
 /*------------------------
   Backgrounds
