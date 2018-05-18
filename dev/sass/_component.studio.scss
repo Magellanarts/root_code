@@ -6,6 +6,7 @@
 }
 
 .c-studio {
+
   &--right {
 
     .c-studio-graphic__content {
@@ -40,14 +41,29 @@
 }
 
 .c-studio-graphic {
-  background: blue;
   position: relative;
   height: 240px;
+  overflow: hidden;
+
+  &:hover {
+    .c-studio-graphic__image {
+      transform: scale(1.05);
+    }
+  }
 
   @media #{$medium} {
     height: auto;
     width: 142%;
   }
+}
+
+.c-studio-graphic__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: .4s ease-in;
 }
 
 .c-studio-graphic__heading {

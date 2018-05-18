@@ -80,6 +80,15 @@
     padding-bottom: 120px;
   }
 }
+
+.u-img-spacer {
+  display: inline-block;
+  margin-bottom: 40px;
+
+  @media #{$medium} {
+    margin-bottom: 80px;
+  }
+}
 /*------------------------
   Text
 ------------------------*/
@@ -90,6 +99,10 @@
     font-size: 28px;
     line-height: 1.57;
   }
+}
+
+.u-text-align-right {
+  text-align: right;
 }
 
 .u-std-text {

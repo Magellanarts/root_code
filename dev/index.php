@@ -14,7 +14,8 @@
 
 <section class="l-anchor-left c-studio-spacer">
   <div class="c-studio">
-    <div class="c-studio-graphic u-img-fill-area">
+    <div class="c-studio-graphic">
+      <div class="c-studio-graphic__image u-img-fill-area" style="background-image: url(i/equipment-rentals@2x.jpg);"></div>
       <div class="c-studio-graphic__content c-studio-graphic__content--large">
         <div class="c-studio-graphic__heading">NYC Studios</div>
         <div class="c-studio-graphic__description">
@@ -60,7 +61,8 @@
 
 <section class="l-anchor-right u-std-pb">
   <div class="c-studio c-studio--right">
-    <div class="c-studio-graphic u-img-fill-area">
+    <div class="c-studio-graphic">
+      <div class="c-studio-graphic__image u-img-fill-area" style="background-image: url(i/equipment-rentals@2x.jpg);"></div>
       <div class="c-studio-graphic__content c-studio-graphic__content--large">
         <div class="c-studio-graphic__heading">NYC Studios</div>
         <div class="c-studio-graphic__description">
@@ -104,13 +106,15 @@
   </div>
 </section>
 
-<section class="l-anchor-right">
-
+<section class="l-anchor-right u-text-align-right">
+  <img class="u-img-spacer" src="i/root-digital-suite@2x.jpg">
 </section>
 <section class="l-anchor-left u-std-pb">
   <div class="c-services">
-    <div class="c-services__secondary">
+    <div class="c-services__secondary u-text-align-right">
+      <img class="u-img-spacer" src="i/equipment-rentals@2x.jpg">
 
+      <img width="73%" class="u-img-spacer" src="i/creative-bts@2x.jpg">
     </div>
 
     <div class="c-services__main o-content">
