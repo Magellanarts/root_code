@@ -1,0 +1,29 @@
+.c-services {
+  @media #{$medium} {
+    display: flex;
+  }
+}
+
+.c-services__secondary {
+  display: none;
+  @media #{$medium} {
+    flex-shrink: 0;
+    flex-basis: 350px;
+    display: block;
+    margin-right: 60px;
+  }
+
+  @media #{$xl} {
+    flex-basis: 500px;
+    margin-right: 120px;
+  }
+}
+
+.c-services__main {
+  padding: 0 7.5%;
+  max-width: 682px;
+
+  @media #{$medium} {
+    padding: 60px 0 0;
+  }
+}

@@ -1,4 +1,53 @@
 /*------------------------
+  MISC
+------------------------*/
+.u-hover-link {
+  text-transform: uppercase;
+  font-family: $altFont;
+  font-weight: 900;
+  color: #000;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 4px;
+
+  &:after {
+    content: '';
+    height: 2px;
+    width: 24px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .2s linear;
+
+    @media #{$medium} {
+      right: 0;
+    }
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+
+  &--white {
+    color: #fff;
+
+    &:after {
+      background: #fff;
+    }
+  }
+
+  &--right {
+    &:after {
+      left: auto;
+      right: 0;
+    }
+  }
+}
+
+/*------------------------
   Spacing
 ------------------------*/
 .u-std-pt {
@@ -41,6 +90,10 @@
     font-size: 28px;
     line-height: 1.57;
   }
+}
+
+.u-std-text {
+  font: 16px/1.5 $siteFont;
 }
 
 /*------------------------

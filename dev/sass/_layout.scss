@@ -4,11 +4,22 @@
 }
 
 .l-slim-container {
-  padding-left: 15%;
-  padding-right: 15%;
+  @media #{$medium} {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
 
 .l-page-section {
   @extend .u-std-pb;
   @extend .u-std-pt;
+}
+
+.l-anchor-left {
+  padding-right:7.5%;
+}
+
+
+.l-anchor-right {
+  padding-left:7.5%;
 }
