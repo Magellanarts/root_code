@@ -31,6 +31,9 @@
   <p>The first of our two locations, our Manhattan studios has been serving industry clients in fashion, arts, and entertainment for nearly two decades. Offering three studios and a roof deck, spanning over 10,000 sq. feet.</p>
 
   <p>Close to  the A, C, E lines and a few blocks away from The Highline, our NYC studios are a prime location for innovative sets and VIP/celebrity events.</p>
+
+  <a href="#" class="c-btn">Contact Booking</a>
+  <a href="#" class="c-btn">Download PDF</a>
 </section>
 
 

@@ -1,0 +1,13 @@
+.c-btn {
+  text-transform: uppercase;
+  color: #000;
+  border: 4px solid #000;
+  display: inline-block;
+  font: 900 16px/1 $altFont;
+  padding: 10px 24px;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+}
