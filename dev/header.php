@@ -36,6 +36,6 @@
 <div class="c-nav-toggle js-nav-toggle">
     <div class="c-nav-toggle__line"></div>
 </div>
-<header class="l-content-container c-site-header">
-    <a href="/" class="c-site-logo"></a>
+<header class="l-content-container c-site-header js-site-header">
+    <a href="/" class="c-site-logo"><img src="i/root-alt.svg"></a>
 </header>
