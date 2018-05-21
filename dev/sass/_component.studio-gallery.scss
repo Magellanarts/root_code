@@ -1,0 +1,8 @@
+.c-studio-gallery {
+  img {
+    display: block;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}

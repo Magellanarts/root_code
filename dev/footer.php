@@ -1,4 +1,4 @@
-    <footer class="l-content-container c-site-footer">
+    <footer class="l-content-container c-site-footer js-site-footer">
         <div class="c-site-footer__contact">
           <div class="c-site-footer__heading">Let’s Connect.
             Collaborate.

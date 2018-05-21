@@ -15,6 +15,25 @@
   justify-content: center;
   position: relative;
 
+  &--active {
+    background: #fff !important;
+
+    .c-thumbnail__title {
+      color: #000;
+
+      &:after {
+        background: #000;
+        width: 100%;
+      }
+    }
+
+    &:hover {
+      &:after {
+        opacity: 0 !important;
+      }
+    }
+  }
+
   &:after {
     content: '';
     z-index: 4;
