@@ -1,0 +1,13 @@
+.c-form-field {
+  margin-bottom: 54px;
+
+  @media #{$medium} {
+    &--half {
+      flex: 1;
+      &:last-child {
+        margin-left: 40px;
+      }
+    }
+  }
+
+}

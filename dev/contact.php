@@ -13,9 +13,44 @@
 
 <section class="l-anchor-right l-split-content l-split-content--equal-width">
   <div>
-   <form>
+    <form>
+      <div class="l-split-content">
+        <div class="c-form-field c-form-field--half">
+          <select class="js-select" name="location">
+            <option>Please select a location*</option>
+            <option value="NYC">NYC</option>
+            <option value="BKN">BKN</option>
+          </select>
+        </div>
 
-   </form>
+        <div class="c-form-field c-form-field--half">
+          <select class="js-select" name="department">
+            <option>Please select a department*</option>
+            <option value="NYC">NYC</option>
+            <option value="BKN">BKN</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="c-form-field">
+        <input type="text" placeholder="Name*" name="name" required>
+      </div>
+
+      <div class="c-form-field">
+        <input type="text" placeholder="Company name" name="company-name">
+      </div>
+
+      <div class="c-form-field">
+        <input type="email" placeholder="E-mail address*" name="email" required>
+      </div>
+
+      <div class="c-form-field">
+        <textarea placeholder="Message*" required></textarea>
+      </div>
+
+      <button class="c-btn" type="submit">Submit</button>
+
+    </form>
 
     <div class="l-split-content l-split-content--equal-width">
       <div>
@@ -36,6 +71,7 @@
 </section>
 
 <section class="l-page-section">
+
 
 </section>
 

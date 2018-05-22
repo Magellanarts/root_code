@@ -106,3 +106,101 @@ function isScrolledIntoView(el) {
   isVisible = (elemTop - window.innerHeight) <= 160;
   return isVisible;
 }
+
+
+// create dropdowns
+const selects = doc.querySelectorAll('.js-select');
+if(selects) {
+  for (let i = 0; i < selects.length; i++) {
+
+    // get name of select
+    const name = selects[i].getAttribute('name');
+
+    // get children of select
+    const children = selects[i].children;
+    const placeholder = children[0].innerText;
+
+    // create new element that will be used to reference our select
+    const selectorElement =  doc.createElement('div');
+    selectorElement.setAttribute('data-select', name);
+    selectorElement.setAttribute('class', 'o-selector js-selector');
+
+    // create the label section of our new dropdown
+    const selectorLabel = doc.createElement('div');
+    selectorLabel.setAttribute('class', 'o-selector__label js-selector__label');
+    const selectorLabelTextElement = doc.createElement('div');
+    selectorLabelTextElement.setAttribute('class', 'o-selector__label-text js-selector__label-text');
+    selectorLabelTextElement.appendChild(doc.createTextNode(placeholder));
+    selectorLabel.appendChild(selectorLabelTextElement);
+
+    // create arrow element for inside label
+    const selectorArrow = doc.createElement('div');
+    selectorArrow.setAttribute('class', 'o-selector__arrow js-selector__arrow');
+
+    // add arrow to label
+    selectorLabel.appendChild(selectorArrow);
+
+    // append the label section to our selector element
+    selectorElement.appendChild(selectorLabel);
+
+    // add event listener to label
+    selectorLabel.addEventListener('click', function () {
+      this.classList.toggle('is-open');
+      this.nextElementSibling.classList.toggle('is-open');
+    });
+
+
+    // create dropdown section
+    const selectorDropdown = doc.createElement('div');
+    selectorDropdown.setAttribute('class', 'o-selector__dropdown js-selector__dropdown');
+
+    // loop through children of select and add them to our new element
+    for (let j = 1; j < children.length; j++) {
+      let dropdownOption = doc.createElement('div');
+      dropdownOption.setAttribute('data-select', name);
+      let dropdownOptionText = children[j].value;
+      dropdownOption.appendChild(doc.createTextNode(dropdownOptionText));
+      selectorDropdown.appendChild(dropdownOption);
+
+      // add event listener to dropdown option
+      dropdownOption.addEventListener('click', function () {
+        var originalSelect = doc.querySelector('select[name="' + this.getAttribute('data-select') + '"]');
+
+
+        var node = this;
+        var indexCounter = 0;
+        // get index of this option
+        while( (node = node.previousSibling) != null )
+          indexCounter++;
+
+        originalSelect.selectedIndex = (indexCounter + 1);
+        // trigger onchange event
+        // it won't fire automatically when we change the selected index
+        if(originalSelect.getAttribute('onchange')) {
+          originalSelect.onchange();
+        }
+
+        // change label to this text
+        this.parentElement.previousSibling.childNodes[0].innerText = this.innerText;
+
+        // remove is-open classes
+        this.parentElement.classList.remove('is-open');
+        this.parentElement.previousSibling.classList.remove('is-open');
+      });
+    }
+
+    // add dropdown to selector
+    selectorElement.appendChild(selectorDropdown);
+
+    // add our new element to the code after the select
+    insertAfter(selectorElement, selects[i]);
+  }
+}
+
+
+/*----------------------
+ Helper Functions
+ ----------------------*/
+function insertAfter(newNode, referenceNode) {
+  referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
