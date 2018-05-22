@@ -34,3 +34,12 @@
     height: 165px;
   }
 }
+
+.c-site-logo {
+  transition:  .2s linear;
+  opacity: 1;
+
+  &.fade-out {
+    opacity:0;
+  }
+}

@@ -87,6 +87,11 @@
 
   @media #{$medium} {
     margin-bottom: 80px;
+
+    &--small {
+      margin-bottom: 64px;
+    }
+
   }
 }
 /*------------------------

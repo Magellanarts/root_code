@@ -1,12 +1,12 @@
 .c-studio-specs-container {
-
-
+  margin-bottom: 32px;
 
   &.relative {
     position: relative;
   }
 
   @media #{$medium} {
+    margin-bottom: 0;
     width: 200px;
     flex-shrink: 0;
     margin-right: 64px;
@@ -36,7 +36,10 @@
 }
 
 .c-studio-specs__inner {
-  position: absolute;
- top: 0;
-  transition: .2s linear;
+
+  @media #{$medium} {
+    position: absolute;
+    top: 0;
+    transition: .2s linear;
+  }
 }

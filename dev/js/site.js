@@ -5,6 +5,7 @@ doc.querySelector('.js-nav-toggle').addEventListener('click', function () {
   doc.querySelector('.js-nav-overlay').classList.toggle('is-visible');
   doc.querySelector('html, body').classList.toggle('no-scroll');
   doc.querySelector('.js-hero').classList.toggle('fade-out');
+  doc.querySelector('.js-site-logo').classList.toggle('fade-out');
 });
 
 // headroom
@@ -47,23 +48,25 @@ var Sticky = (function() {
       return this.position < (window.scrollY + 70);
     },
     onScroll: function(event) {
-      if (this.aboveScroll()) {
-        var bottomOfElement = this.position + this.element.offsetHeight;
-        var footer = doc.querySelector('.js-site-footer');
+      if(window.innerWidth > 800) {
+        if (this.aboveScroll()) {
+          var bottomOfElement = this.position + this.element.offsetHeight;
+          var footer = doc.querySelector('.js-site-footer');
 
-        if(isScrolledIntoView(footer)) {
+          if(isScrolledIntoView(footer)) {
             // if footer is viewable, we need to adjust the specs to only scroll to bottom of parent
-          doc.querySelector('.js-studio-specs-container').classList.add('relative');
-          this.element.classList.add('position-bottom');
-        } else {
-          // fix the element
-          this.setFixed();
-          this.element.classList.remove('position-bottom');
-          doc.querySelector('.js-studio-specs-container').classList.remove('relative');
-        }
+            doc.querySelector('.js-studio-specs-container').classList.add('relative');
+            this.element.classList.add('position-bottom');
+          } else {
+            // fix the element
+            this.setFixed();
+            this.element.classList.remove('position-bottom');
+            doc.querySelector('.js-studio-specs-container').classList.remove('relative');
+          }
 
-      } else {
-        this.setStatic();
+        } else {
+          this.setStatic();
+        }
       }
     },
     setFixed: function() {

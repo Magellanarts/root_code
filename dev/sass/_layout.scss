@@ -23,6 +23,20 @@
   @media #{$medium} {
     display: flex;
     justify-content: space-between;
+
+    &--align-center {
+      align-items: center;
+    }
+
+    &--equal-width {
+      > div {
+        flex: 1;
+        &:last-child {
+          margin-left: 120px;
+        }
+      }
+    }
+
   }
 }
 

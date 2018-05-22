@@ -37,5 +37,5 @@
     <div class="c-nav-toggle__line"></div>
 </div>
 <header class="l-content-container c-site-header js-site-header">
-    <a href="/" class="c-site-logo"><img src="i/root-alt.svg"></a>
+    <a href="/" class="c-site-logo js-site-logo"><img src="i/root-alt.svg"></a>
 </header>
