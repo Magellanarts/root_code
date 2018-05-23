@@ -73,6 +73,16 @@ textarea {
   font: 700 12px/1 $siteFont;
   padding: 8px 0 10px;
   outline: none !important;
+  background: none;
+
+  &.error {
+    border-bottom-color: #ff0033;
+  }
+
+  &.white {
+    color: #fff;
+    border-bottom-color: #fff;
+  }
 }
 
 textarea {

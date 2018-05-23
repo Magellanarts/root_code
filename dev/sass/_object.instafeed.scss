@@ -1,0 +1,16 @@
+#instafeed {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#instafeed a {
+  flex: 1;
+  margin: 0 1%;
+  flex-basis: 30%;
+
+  @media #{$medium} {
+    flex: 1;
+  }
+
+}

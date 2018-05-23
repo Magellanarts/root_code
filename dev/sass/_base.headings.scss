@@ -18,3 +18,13 @@ h2 {
   }
 
 }
+
+h3 {
+  font: 900 19px/1 $siteFont;
+  margin-bottom: 32px;
+
+  @media #{$medium} {
+    font-size: 40px;
+    margin-bottom: 56px;
+  }
+}

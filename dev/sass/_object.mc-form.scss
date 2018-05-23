@@ -1,0 +1,24 @@
+.o-mc-form {
+  margin-top: 40px;
+  position: relative;
+
+  &:after {
+    display: none;
+  }
+}
+
+.o-mc-form__fields {
+  input[type="submit"] {
+    margin-top: 24px;
+  }
+
+  @media #{$medium} {
+    display: flex;
+    justify-content: space-between;
+
+    input[type="submit"] {
+      margin-left: 19px;
+      margin-top: 0;
+    }
+  }
+}

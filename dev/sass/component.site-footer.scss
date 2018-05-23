@@ -17,8 +17,10 @@
 }
 
 .c-site-footer__contact {
+  margin-bottom: 64px;
   @media #{$medium} {
     width: 30%;
+    margin-bottom: 0;
   }
 }
 
@@ -43,6 +45,7 @@
 }
 
 .c-site-footer__newsletter {
+  margin-bottom: 60px;
 
   @media #{$medium} {
     margin: 0 112px;

@@ -6,6 +6,16 @@
   font: 900 16px/1 $altFont;
   padding: 10px 24px;
   text-align: center;
+  background: none;
+
+  &--white {
+    color: #fff;
+    border-color: #fff;
+  }
+
+  &--mini {
+    padding: 8px 12px;
+  }
 
   &:not(:last-child) {
     margin-right: 12px;
