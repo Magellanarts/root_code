@@ -1,5 +1,9 @@
 <?php include('header.php'); ?>
-<section class="l-content-container c-hero js-hero u-img-fill-area" style="background-image: url(i/screenshot-2018-05-11-13-19-46@2x.jpg);">
+<section class="l-content-container c-hero--contact c-hero c-hero--with-video js-hero" >
+
+  <video class="c-hero__video" autoplay loop>
+    <source src="videos/contact.mp4" type="video/mp4">
+  </video>
   <h1>Let’s get down to the root of your needs.</h1>
 </section>
 
@@ -11,7 +15,7 @@
   </div>
 </section>
 
-<section class="l-anchor-right l-split-content l-split-content--equal-width">
+<section class="l-anchor-right@med l-split-content l-split-content--equal-width">
   <div>
     <div class="c-contact-form-container">
       <form name="contact-form" class="c-contact-form js-form">

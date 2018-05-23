@@ -44,6 +44,15 @@
   padding-left:7.5%;
 }
 
+.l-anchor-right\@med {
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  @media #{$medium} {
+    padding-right: 0;
+    padding-left:7.5%;
+  }
+}
+
 .l-constrain-content {
   @media #{$medium} {
     width: 70%;

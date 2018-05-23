@@ -1,5 +1,9 @@
 <?php include('header.php'); ?>
-<section class="l-content-container c-hero js-hero u-img-fill-area">
+<section class="l-content-container c-hero c-hero--with-video js-hero">
+
+  <video class="c-hero__video" autoplay loop>
+    <source src="videos/home.mp4" type="video/mp4">
+  </video>
   <h1>A fully-integrated production photo house - a modern partner to pioneering brands.</h1>
 
   <div class="c-hero__arrow"></div>
@@ -14,23 +18,23 @@
 
 <section class="l-anchor-left c-studio-spacer">
   <div class="c-studio">
-    <div class="c-studio-graphic">
+    <a href="#" class="c-studio-graphic">
       <div class="c-studio-graphic__image u-img-fill-area" style="background-image: url(i/equipment-rentals@2x.jpg);"></div>
-      <div class="c-studio-graphic__content c-studio-graphic__content--large">
+      <div class="c-studio-graphic__content c-studio-graphic__content--large u-text-align-right">
         <div class="c-studio-graphic__heading">NYC Studios</div>
         <div class="c-studio-graphic__description">
           <p>Based in the premier art district of Chelsea, ROOT NYC is where it all started.</p>
         </div>
-        <a href="#">Explore</a>
+        <span class="u-hover-link u-hover-link--right" >Explore</span>
       </div>
-    </div>
+    </a>
 
     <div class="c-studio-graphic__content c-studio-graphic__content--small">
       <div class="c-studio-graphic__heading">NYC Studios</div>
       <div class="c-studio-graphic__description">
         <p>Based in the premier art district of Chelsea, ROOT NYC is where it all started.</p>
       </div>
-      <a href="#">Explore</a>
+      <a class="u-hover-link" href="#">Explore</a>
     </div>
 
     <div class="c-studio-details">
@@ -61,23 +65,23 @@
 
 <section class="l-anchor-right u-std-pb">
   <div class="c-studio c-studio--right">
-    <div class="c-studio-graphic">
+    <a href="#" class="c-studio-graphic">
       <div class="c-studio-graphic__image u-img-fill-area" style="background-image: url(i/equipment-rentals@2x.jpg);"></div>
       <div class="c-studio-graphic__content c-studio-graphic__content--large">
         <div class="c-studio-graphic__heading">NYC Studios</div>
         <div class="c-studio-graphic__description">
           <p>Based in the premier art district of Chelsea, ROOT NYC is where it all started.</p>
         </div>
-        <a href="#">Explore</a>
+        <span class="u-hover-link" >Explore</span>
       </div>
-    </div>
+    </a>
 
     <div class="c-studio-graphic__content c-studio-graphic__content--small">
       <div class="c-studio-graphic__heading">NYC Studios</div>
       <div class="c-studio-graphic__description">
         <p>Based in the premier art district of Chelsea, ROOT NYC is where it all started.</p>
       </div>
-      <a href="#">Explore</a>
+      <a class="u-hover-link" href="#">Explore</a>
     </div>
 
     <div class="c-studio-details">

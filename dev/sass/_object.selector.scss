@@ -14,44 +14,44 @@
     .o-selector__arrow {
       &:before {
         // left:6px;
-        transform: rotate(33deg);
+        transform: rotate(40deg);
       }
 
       &:after {
         // right: 7px;
-        transform: rotate(-33deg);
+        transform: rotate(-40deg);
       }
     }
   }
 }
 
 .o-selector__arrow {
-  width: 40px;
-  height: 100%;
+  width: 4px;
+  height: 4px;
+  top: 11px;
+  right: 2px;
+  position: absolute;
 
-
-
-  right: 0;
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 1.5px;
+    background: #000;
+    transition: .2s linear;
+  }
 
   &:before {
-    left: 14px;
-    top: 8px;
+    left: 0;
+    transform: rotate(-40deg);
   }
 
   &:after {
-    right: 13px;
-    top: 8px;
+    right: 0;
+    transform: rotate(40deg);
   }
 
-  @media #{$medium} {
-    &:before {
-      top: 11px;
-    }
-
-    &:after {
-      top: 11px;
-    }
-  }
 }
 
 .o-selector__dropdown {

@@ -8,6 +8,16 @@ doc.querySelector('.js-nav-toggle').addEventListener('click', function () {
   doc.querySelector('.js-site-logo').classList.toggle('fade-out');
 });
 
+
+// submenu
+var submenuToggles = doc.querySelectorAll('.js-submenu-toggle');
+
+for(var i = 0; i < submenuToggles.length; i++) {
+  submenuToggles[i].addEventListener('click', function () {
+    this.nextElementSibling.classList.toggle('is-open');
+  });
+}
+
 // headroom
 var headroom = new Headroom(doc.querySelector('.js-site-header'),{
   onPin : function() {

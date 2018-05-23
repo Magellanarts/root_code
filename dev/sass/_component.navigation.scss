@@ -15,10 +15,6 @@
   padding-bottom: 36px;
   margin-bottom: 20px;
 
-  a {
-    font: 900 56px/1 $altFont;
-  }
-
   &:after {
     content: '';
     width: 24px;
@@ -30,8 +26,38 @@
   }
 }
 
+.c-site-nav__label {
+  font: 900 56px/1 $altFont;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+}
+
 
 .c-secondary-nav {
   font: 900 24px/1 $altFont;
   margin-bottom: 36px;
+}
+
+.c-site-nav__submenu {
+  transition: all .2s linear;
+  padding: 0;
+  overflow: hidden;
+  max-height: 0;
+
+  a {
+    color: rgba(255,255,255,.4);
+    font: 900 24px/1.5 $altFont;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+
+  &.is-open {
+    padding: 16px 0 20px;
+    max-height: 700px;
+  }
 }

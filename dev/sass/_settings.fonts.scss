@@ -1,4 +1,11 @@
-@font-face{
-  font-family: 'dincond-med';
-  src: url('fonts/dincond-regularalternate-webfont.woff') format('woff');
+@font-face {
+  font-family: 'DINCond';
+  src: url('fonts/DINCond-Black.eot');
+  src: url('fonts/DINCond-Black.eot?#iefix') format('embedded-opentype'),
+  url('fonts/DINCond-Black.woff2') format('woff2'),
+  url('fonts/DINCond-Black.woff') format('woff'),
+  url('fonts/DINCond-Black.ttf') format('truetype'),
+  url('fonts/DINCond-Black.svg#DINCond-Black') format('svg');
+  font-weight: 500;
+  font-style: normal;
 }

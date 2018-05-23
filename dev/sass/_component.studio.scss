@@ -37,6 +37,13 @@
   @media #{$medium} {
     display: flex;
     justify-content: space-between;
+
+    &--right {
+
+      .c-studio-graphic__content {
+        padding-left: 4%;
+      }
+    }
   }
 }
 
@@ -44,10 +51,17 @@
   position: relative;
   height: 240px;
   overflow: hidden;
+  display: block;
 
   &:hover {
     .c-studio-graphic__image {
       transform: scale(1.05);
+    }
+
+    .u-hover-link {
+      &:after {
+        width: 100%;
+      }
     }
   }
 
@@ -77,42 +91,12 @@
 }
 
 .c-studio-graphic__content {
-
-  a {
-    text-transform: uppercase;
-    font-family: $altFont;
-    font-weight: 900;
-    color: #000;
-    display: inline-block;
-    position: relative;
-    padding-bottom: 4px;
-
-    &:after {
-      content: '';
-      height: 2px;
-      width: 24px;
-      background: #000;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      transition: .2s linear;
-
-      @media #{$medium} {
-        right: 0;
-      }
-    }
-
-    &:hover {
-      &:after {
-        width: 100%;
-      }
-    }
-  }
+  color: #000;
   
   &--large {
     display: none;
     background: #fff;
-    text-align: right;
+
     padding: 40px 4%;
     position: absolute;
     right: 0;

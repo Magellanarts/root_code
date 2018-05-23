@@ -4,7 +4,7 @@
             Collaborate.
             Create.</div>
 
-          <a href="#" class="u-hover-link u-hover-link--white">Contact Us</a>
+          <a href="/contact/" class="u-hover-link u-hover-link--white">Contact Us</a>
         </div>
 
       <div class="c-site-footer__newsletter">
@@ -15,7 +15,7 @@
         <p>Subscribe to our newsletter and always be the first to know about what's happening at ROOT.</p>
 
 
-        <div id="mc_embed_signup " >
+        <div id="mc_embed_signup">
           <form action="//rootnyc.us8.list-manage.com/subscribe/post?u=8dbb27d3d250ce738105f92ca&amp;id=118fe0b5ab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate o-mc-form" target="_blank" novalidate >
             <div id="mc_embed_signup_scroll" style="display: inline;">
 
@@ -44,10 +44,10 @@
 
       <div class="c-site-footer__get-in-touch">
         <div class="c-site-footer__social-links">
-          <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-          <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-          <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.facebook.com/ROOT.NYC.BKN" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/root-studios-nyc-/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://twitter.com/rootstudios" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/rootstudios/" target="_blank"><i class="fa fa-instagram"></i></a>
         </div>
 
         <div class="c-site-footer__address">

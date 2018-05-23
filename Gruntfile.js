@@ -20,7 +20,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: 'dev',
-            src: ['*.html', '*.php', 'js/**/*', 'page-templates/*.php', 'components/*.php', 'i/**/*', 'fonts/**/*', 'data/**/*'],
+            src: ['*.html', '*.php', 'js/**/*', 'videos/**/*', 'page-templates/*.php', 'components/*.php', 'i/**/*', 'fonts/**/*', 'data/**/*'],
             dest: 'target/'
           }
         ]

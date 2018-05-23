@@ -1,6 +1,10 @@
 h1 {
   font: 900 40px/1.2 $altFont;
   text-transform: uppercase;
+  position: relative;
+  z-index: 100;
+  max-width: 90%;
+  margin: auto;
   
   @media #{$medium} {
     font-size: 80px;
@@ -20,7 +24,7 @@ h2 {
 }
 
 h3 {
-  font: 900 19px/1 $siteFont;
+  font: 900 19px/1 $altFont;
   margin-bottom: 32px;
 
   @media #{$medium} {
